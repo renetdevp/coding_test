@@ -127,9 +127,9 @@ void bfs(Table *table, Set positions, int ob){
 			return;
 		}
 
-		for (int i=0; i<4; ++i)
-			if (i%2 != data.rollTo%2)
-				if (data.n < 9)
+		if (data.n < 9)
+			for (int i=0; i<4; ++i)
+				if (i%2 != data.rollTo%2)
 					insert(queue, newSet.rb, newSet.bb, i, data.n+1);
 	}
 
