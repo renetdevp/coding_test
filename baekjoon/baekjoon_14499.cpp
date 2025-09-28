@@ -138,7 +138,7 @@ void solution(int n, int m, int x, int y, int k){
 int main(){
 	int n, m, x, y, k;
 
-	scanf("%d %d %d %d %d", &n, &m, &x, &y, &k);
+	scanf("%d %d %d %d %d", &n, &m, &y, &x, &k);
 
 	solution(n, m, x, y, k);
 
